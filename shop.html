@@ -1,122 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop - Toybox</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-<body>
-  <nav class="navBar">
-    <div class="wrapper">
+  <body>
+    <a href="#products" class="skip-link">Skip to main content.</a>
+
+    <nav class="navBar">
+      <div class="wrapper">
         <button class="menuIcon">
-            <img src="./assets/menu-button.svg" alt="open slide-out navigation" class="menuIcon">
+          <img
+            src="./assets/menu-button.svg"
+            alt="open slide-out navigation"
+            class="menuIcon"
+          />
         </button>
         <a href="./index.html" class="logo">
-            <h1>Toybox<span class="sr-only"> - Shop Page</span></h1>
+          <h1>Toybox<span class="sr-only"> - Shop Page</span></h1>
         </a>
         <div class="searchCart">
-            <button class="menuIcon">
-                <img src="./assets/search.svg" alt="search icon" class="searchIcon">
-            </button>
+          <button class="menuIcon">
+            <img
+              src="./assets/search.svg"
+              alt="search icon"
+              class="searchIcon"
+            />
+          </button>
 
-            <a href="#" class="bag">
-                <img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
-            </a>
-            <div class="counter">
-                <p class="smallCopy">0</p>
-            </div> 
-        </div> 
-    </div>
-    
-    <div class="slideOutNav">
+          <a href="#" class="bag">
+            <img
+              src="./assets/shop-bag.svg"
+              alt="shopping bag icon"
+              class="bagIcon"
+            />
+          </a>
+          <div class="counter">
+            <p class="smallCopy">0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slideOutNav">
         <div class="buttonContainer">
-            <button>
-                <img src="./assets/menu-close.svg" alt="close slide-out navigation">
-            </button>
+          <button>
+            <img
+              src="./assets/menu-close.svg"
+              alt="close slide-out navigation"
+            />
+          </button>
         </div>
         <nav>
-            <ul class="mainMenu">
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</nav>
-
-
-
-
-
-<footer id="footer">
-  <div class="wrapper">
-    <div class="footerFlexContainer">
-      <a href="./index.html" class="logo">
-        <h4>Toybox</h4>
-      </a>
-      <div class="footerNav">
-        <nav>
-          <ul class="footerShop">
-            <li>
-              <h5>Shop</h5>
-            </li>
-            <li>
-              <a href="">Safari</a>
-            </li>
-            <li>
-              <a href="">Ocean</a>
-            </li>
-            <li>
-              <a href="">Dinos</a>
-            </li>
-            <li>
-              <a href="">Sale</a>
-            </li>
-          </ul>
-          <ul class="footerAbout">
-            <li>
-              <h5>About</h5>
-            </li>
-            <li>
-              <a href="">About Us</a>
-            </li>
-            <li>
-              <a href="">FAQ</a>
-            </li>
-            <li>
-              <a href="">News</a>
-            </li>
-            <li>
-              <a href="">Legal</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-          </ul>
-          <ul class="footerTemp">
-            <li>
-              <h5>Template</h5>
-            </li>
-            <li>
-              <a href="">Style Guide</a>
-            </li>
-            <li>
-              <a href="">Licenses</a>
-            </li>
-            <li>
-              <a href="">Changelog</a>
-            </li>
+          <ul class="mainMenu">
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-      </div> <!-- .footerNav END -->
-    </div> <!-- .footerFlexContainer END-->
-  </div> <!-- .wrapper END-->
-</footer>
-</body>
+      </div>
+    </nav>
+
+    <main id="products">
+      <section class="allProducts" id="allProducts">
+        <div class="wrapper">
+          <h2>All Products</h2>
+          <ul class="products">
+            <li>
+              <a href="">
+                <img
+                  src="./assets/safari-trio.jpg"
+                  alt="Hand-carved safari animal toys"
+                />
+                <p class="popularProduct">Safari Trio</p>
+                <p class="price">$49.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/octopus.jpg" alt="Wooden toy octopus" />
+                <p class="popularProduct">Octopus</p>
+                <p class="price discountedPrice">
+                  $18.00USD <span>$15.00USD</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/crocodile.jpg" alt="Wooden toy crocodile" />
+                <p class="popularProduct">Crocodile</p>
+                <p class="price">$18.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./assets/reef-fish.jpg"
+                  alt="Hand-carved reef fish toy"
+                />
+                <p class="popularProduct">Reef Fish</p>
+                <p class="price">$49.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./assets/spinosaurus.jpg"
+                  alt="Hand-carved reef fish toy"
+                />
+                <p class="popularProduct">Spinosaurus</p>
+                <p class="price">$49.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/orca.jpg" alt="Hand-carved reef fish toy" />
+                <p class="popularProduct">Orca</p>
+                <p class="price">$49.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./assets/ocean-trio.jpg"
+                  alt="Hand-carved reef fish toy"
+                />
+                <p class="popularProduct">Ocean Trio</p>
+                <p class="price">$49.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./assets/elephant.jpg"
+                  alt="Hand-carved reef fish toy"
+                />
+                <p class="popularProduct">Elephants</p>
+                <p class="price">$49.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./assets/dino-trio.jpg"
+                  alt="Hand-carved reef fish toy"
+                />
+                <p class="popularProduct">Dino Trio</p>
+                <p class="price">$49.00USD</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/triceratops.jpg" alt="Wooden toy octopus" />
+                <p class="popularProduct">Triceratops</p>
+                <p class="price discountedPrice">
+                  $18.00USD <span>$15.00USD</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/brontosaurus.jpg" alt="Wooden toy octopus" />
+                <p class="popularProduct">Brontosaurus</p>
+                <p class="price discountedPrice">
+                  $18.00USD <span>$15.00USD</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="guarantees">
+        <div class="wrapper">
+          <h2>Customer Guarantees</h2>
+          <ul>
+            <li>
+              <img src="./assets/dolly.svg" alt="" />
+              <h3>Express Shipping</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolore, aperiam.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/credit-card.svg" alt="" />
+              <h3>Money-Back Guarantee</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolore, aperiam.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/shipping.svg" alt="" />
+              <h3>Hassle-free Returns</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolore, aperiam.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/checkout.svg" alt="" />
+              <h3>Simple Checkout</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolore, aperiam.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="footerFlexContainer">
+          <a href="./index.html" class="logo">
+            <h4>Toybox</h4>
+          </a>
+          <div class="footerNav">
+            <nav>
+              <ul class="footerShop">
+                <li>
+                  <h5>Shop</h5>
+                </li>
+                <li>
+                  <a href="">Safari</a>
+                </li>
+                <li>
+                  <a href="">Ocean</a>
+                </li>
+                <li>
+                  <a href="">Dinos</a>
+                </li>
+                <li>
+                  <a href="">Sale</a>
+                </li>
+              </ul>
+              <ul class="footerAbout">
+                <li>
+                  <h5>About</h5>
+                </li>
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">FAQ</a>
+                </li>
+                <li>
+                  <a href="">News</a>
+                </li>
+                <li>
+                  <a href="">Legal</a>
+                </li>
+                <li>
+                  <a href="">Contact</a>
+                </li>
+              </ul>
+              <ul class="footerTemp">
+                <li>
+                  <h5>Template</h5>
+                </li>
+                <li>
+                  <a href="">Style Guide</a>
+                </li>
+                <li>
+                  <a href="">Licenses</a>
+                </li>
+                <li>
+                  <a href="">Changelog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- .footerNav END -->
+        </div>
+        <!-- .footerFlexContainer END-->
+      </div>
+      <!-- .wrapper END-->
+    </footer>
+  </body>
 </html>

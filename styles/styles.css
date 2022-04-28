@@ -646,6 +646,58 @@ header .headerContent .contentContainer {
   color: #084b6d;
   display: inline-block;
 }
+.productsMainContent .guarantees {
+  position: relative;
+  background-color: #fff5f5;
+}
+.productsMainContent .guarantees::before {
+  content: "";
+  background: url(../assets/wave-3.svg) top center;
+  background-size: 1500px 60px;
+  position: absolute;
+  height: 3rem;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.productsMainContent .guarantees h2 {
+  font-family: "Jakarta Sans";
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.productsMainContent .guarantees h3 {
+  font-family: "Jakarta Sans";
+  font-weight: 700;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  margin: 20px 0;
+}
+.productsMainContent .guarantees p {
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+}
+.productsMainContent .guarantees ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.productsMainContent .guarantees ul li {
+  margin: 0 20px;
+  width: calc(25% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.productsMainContent .guarantees img {
+  width: 5vw;
+}
 
 footer {
   background-color: #084b6d;
